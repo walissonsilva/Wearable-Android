@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.walisson.wearable_bluetooth.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/label_freq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frequência Cardíaca"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/freq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contextClickable="false"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura Corporal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contextClickable="false"
+            android:editable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="45sp"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black" />
+
+        <Button
+            android:id="@+id/search_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickListener"
+            android:layout_marginTop="10dp"
+            android:text="Procurar Dispositivos" />
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
