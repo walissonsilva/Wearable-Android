@@ -66,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
         info_freq = (EditText) findViewById(R.id.freq);
         info_temp = (EditText) findViewById(R.id.temp);
 
-        info_freq.setText("91 BPM");
-        info_temp.setText("37.3 °C");
-
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
         if (mBluetoothAdapter == null) {
